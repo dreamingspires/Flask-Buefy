@@ -1,0 +1,17 @@
+{% extends "buefy/base.html" %}
+
+{% block content %}
+<h1>Hello, world!</h1>
+<div id="app">
+  <b-button type="is-primary">Primary</b-button>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+    new Vue({
+        el: '#app'
+    })
+</script>
+{% endblock %}
